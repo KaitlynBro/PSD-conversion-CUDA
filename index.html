@@ -5,9 +5,10 @@
 	<title>Cuda</title>
 	<link rel="stylesheet" href="./public/styles/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--I wrote this code but the design is from a template-->
 </head>
-<body class="wrapper">
+<body>
 <header>
 	<nav class="headerNav">
 		<ul class="logo">
@@ -21,9 +22,9 @@
 			<li><a href="#">Contact</a></li>
 		</ul>
 	</nav>
-	<div class="headerContent">
+	<div class="headerContent wrapper">
 		<h1>Hi there! We are the new kids on the block</br> and we build awesome websites and mobile apps.</h1>
-		<button class="headerButton">Work with us!</button>
+		<button class="primaryButton headerButton">Work with us!</button>
 	</div>
 </header>
 <section class="services">
@@ -31,27 +32,27 @@
 	<p class="headerInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, illo, in. Laudantium, iure deserunt quaerat, amet quis optio ex sint.</p>
 
 	<div class="servicesContent"> <!--opening div for services sections-->
-		<div class="serviceInfo service1">
+		<div class="serviceInfo service1 wrapper">
 			<img src="./assets/flagIcon.png" alt="Red Flag Icon" class="serviceImage">
 			<h3>Branding</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium.</p>
 		</div>
 
-		<div class="serviceInfo service2">
+		<div class="serviceInfo service2 wrapper">
 			<img src="./assets/crayonIcon.png" alt="Pencil Crayon Icon" class="serviceImage">
 			<h3>Design</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium.</p>
 		</div>
 
-		<div class="serviceInfo service3">
+		<div class="serviceInfo service3 wrapper">
 			<img src="./assets/gearsIcon.png" alt="Gears Icon" class="serviceImage">
 			<h3>Development</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium.</p>
 		</div>
 
-		<div class="serviceInfo service4">
+		<div class="serviceInfo service4 wrapper">
 			<img src="./assets/rocketIcon.png" alt="Rocket Icon" class="serviceImage">
-			<h3>Branding</h3>
+			<h3>Rocket Science</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium.</p>
 		</div>
 	</div> <!--closing div for services sections-->
@@ -62,7 +63,7 @@
 	<p class="teamLorem headerInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, beatae.</p>
 	
 	<div class="teamInfo"> <!--opening div for team sections-->
-		<div class="teamMember team1">
+		<div class="teamMember team1 wrapper">
 			<div class="circle"></div>
 			<h3>Anne Hathaway</h3>
 			<h4>CEO / Marketing Guru</h4>
@@ -75,7 +76,7 @@
 			</div>
 		</div>
 
-		<div class="teamMember team2">
+		<div class="teamMember team2 wrapper">
 			<div class="circle"></div>
 			<h3>Kate Upton</h3>
 			<h4>Creative Director</h4>
@@ -87,7 +88,7 @@
 			</div>
 		</div>
 
-		<div class="teamMember team3">
+		<div class="teamMember team3 wrapper">
 			<div class="circle"></div>
 			<h3>Olivia Wilde</h3>
 			<h4>Lead Designer</h4>
@@ -100,7 +101,7 @@
 			</div>
 		</div>
 
-		<div class="teamMember team4">
+		<div class="teamMember team4 wrapper">
 			<div class="circle"></div>
 			<h3>Ashley Greene</h3>
 			<h4>SEO / Developer</h4>
@@ -119,27 +120,27 @@
 	<p class="headerInfo skillsInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit possimus adipisci culpa iste veniam magni maxime autem a dolore asperiores.</p>
 
 	<div class="skillsStats"> <!--opening div for skills sections-->
-		<div>
+		<div class="statVisual statVisual1 wrapper">
 			<p class="percentage">90%</p>
 			<img src="./assets/progressBlue.png" alt="90% progress in Web Design" class="skillsImage">
 			<h3>Web Design</h3>
 		</div>
 
-		<div>
+		<div class="statVisual statVisual2">
 			<p class="percentage">75%</p>
 			<img src="./assets/progressPink.png" alt="75% progress in HTML / CSS" class="skillsImage">
 			<h3>HTML / CSS</h3>
 		</div>
 
-		<div>
-			<p class="percentage">70%</p>
+		<div class="statVisual statVisual3">
+			<p class="percentage percentage70">70%</p>
 			<img src="./assets/progressGreen.png" alt="70% progress in Graphic Design" class="skillsImage">
 			<h3>Graphic Design</h3>
 		</div>
 
-		<div>
+		<div class="statVisual statVisual4">
 			<p class="percentage">85%</p>
-			<img src="./assets/progressBlue.png" alt="85% progress in UI / UX" class="skillsImage">>
+			<img src="./assets/progressOrange.png" alt="85% progress in UI / UX" class="skillsImage">
 			<h3>UI / UX</h3>
 		</div>
 	</div> <!--closing div for skills sections-->
@@ -150,66 +151,76 @@
 	<p class="headerInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quaerat ad maxime dicta, aliquam reiciendis.</p>
 	<nav>
 		<ul>
-			<li><button>All</button></li>
-			<li><button>Web</button></li>
-			<li><button>Apps</button></li>
-			<li><button>Icons</button></li>
+			<li><button><a href="#">All</a></button></li>
+			<li><button><a href="#">Web</a></button></li>
+			<li><button><a href="#">Apps</a></button></li>
+			<li><button><a href="#">Icons</a></button></li>
 		</ul>
 	</nav>
 
-	<div>
-		<img src="./assets/laptop1.png" alt="Image of a laptop">
-		<p>Isometric Perspective Mock-Up</p>
-	</div>
+	<div class="portfolioSection">
+		<div class="portfolios portfolioLine1">
+			<img src="./assets/laptop1.png" alt="Image of a laptop">
+			<p>Isometric Perspective Mock-Up</p>
+		</div>
 
-	<div>
-		<img src="./assets/laptop2.png" alt="Image of a laptop">
-		<p>Time zone APP UI</p>
-	</div>
+		<div class="portfolios portfolioLine1">
+			<img src="./assets/laptop2.png" alt="Image of a laptop">
+			<p>Time zone APP UI</p>
+		</div>
 
-	<div>
-		<img src="./assets/laptop3.png" alt="Image of a laptop">
-		<p>Viro Media Players UI</p>
-	</div>
+		<div class="portfolios portfolioLine2">
+			<img src="./assets/laptop3.png" alt="Image of a laptop">
+			<p>Viro Media Players UI</p>
+		</div>
 
-	<div>
-		<img src="./assets/laptop4.png" alt="Image of a laptop">
-		<p>Blog / Magazine Flat UI Kit</p>
+		<div class="portfolios portfolioLine1">
+			<img src="./assets/laptop4.png" alt="Image of a laptop">
+			<p>Blog / Magazine Flat UI Kit</p>
+		</div>
 	</div>
-	<button>Load More Projects</button>
+	<button class="primaryButton projectsButton">Load More Projects</button>
 </section>
 
 <section class="testimonials">
 	<h2>What People Say About Us</h2>
 	<p class="headerInfo">Lorem ipsum dolor sit amet.</p>
 
-	<div> <!--opening div for testimonial sections-->
-		<div>
+	<div class="testimonialQuotes wrapper"> <!--opening div for testimonial sections-->
+		<div class="testimonialInfo wrapper testimonialLine1 testimonialLeft">
 			<div class="circleSmall"></div>
-			<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sapiente."</p>
-			<h3>Chanel Iman</h3>
-			<p>CEO of Pinterest</p>
+			<div class="quote quoteLeft">
+				<p class="quoteText">"Lorem ipsum dolor sit amet,consectetur adipisicing elit. Corporis, sapiente."</p>
+				<h3>Chanel Iman</h3>
+				<p class="quoteAuthor">CEO of Pinterest</p>
+			</div>
 		</div>
 
-		<div>
+		<div class="testimonialInfo wrapper testimonialLine1">
 			<div class="circleSmall"></div>
-			<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sapiente."</p>
-			<h3>Adriana Lima</h3>
-			<p>Founder of Instagram</p>
+			<div class="quote quoteRight">
+				<p class="quoteText">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sapiente."</p>
+				<h3>Adriana Lima</h3>
+				<p class="quoteAuthor">Founder of Instagram</p>
+			</div>
 		</div>
 
-		<div>
+		<div class="testimonialInfo wrapper testimonialLine2 testimonialLeft">
 			<div class="circleSmall"></div>
-			<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sapiente."</p>
-			<h3>Anne Hathaway</h3>
-			<p>Lead Designer at Behance</p>
+			<div class="quote quoteLeft">
+				<p class="quoteText">"Lorem ipsum dolor sit amet,consectetur adipisicing elit. Corporis, sapiente."</p>
+				<h3>Anne Hathaway</h3>
+				<p class="quoteAuthor">Lead Designer at Behance</p>
+			</div>
 		</div>
 
-		<div>
+		<div class="testimonialInfo wrapper testimonialLine2">
 			<div class="circleSmall"></div>
-			<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sapiente."</p>
-			<h3>Emma Stone</h3>
-			<p>Co-Founder of Shazam</p>
+			<div class="quote quoteRight">
+				<p class="quoteText">"Lorem ipsum dolor sit amet,consectetur adipisicing elit. Corporis, sapiente."</p>
+				<h3>Emma Stone</h3>
+				<p class="quoteAuthor">Co-Founder of Shazam</p>
+			</div>
 		</div>
 	</div> <!--closing div for testimonial sections-->
 </section>
@@ -217,28 +228,33 @@
 <footer>
 	<h2>Get in Touch</h2>
 	<p class="headerInfo">1600 Pennsylvania Ave NW, Washington, DC 20500, Unites States of America. Tel (202) 456-1111</p>
-	<form action="">
-		<input type="text" placeholder="Your Name*" required="">
-		<input type="text" placeholder="Your Email*" required="">
-		<textarea name="" id="" cols="30" rows="10" required="">Your Message*</textarea>
-		<input type="submit" value="Send Message">
-	</form>
+	<div class="form">
+		<form action="">
+		<div class="contactNameEmail">
+			<input type="text" placeholder="Your Name*" required="" class="inputName">
+			<input type="text" placeholder="Your Email*" required="">
+		</div>
+		<div class="contactText">
+			<textarea name="" id="" cols="30" rows="10" required="" placeholder="Your Message*" class="yourMessage"></textarea>
+		</div>
+		<button class="primaryButton contactButton">Send Message</button>
+		</form>
+	</div>
 
-	<nav>
+	<nav class="footerNav">
 		<ul>
-			<li>Facebook</li>
-			<li>Twitter</li>
-			<li>Google+</li>
-			<li>Linkedin</li>
-			<li>Behance</li>
-			<li>Dribbble</li>
-			<li>Github</li>
+			<li class="facebook">Facebook</li>
+			<li class="twitter">Twitter</li>
+			<li class="google">Google+</li>
+			<li class="linkedin">Linkedin</li>
+			<li class="behance">Behance</li>
+			<li class="dribbble">Dribbble</li>
+			<li class="github">Github</li>
 		</ul>
 	</nav>
 </footer>
 </body>
 </html>
-
 
 
 
