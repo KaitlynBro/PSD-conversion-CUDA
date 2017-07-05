@@ -228,13 +228,25 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
 
 .teamMember {
-  max-width: 25%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   margin-bottom: 128px; }
+
+.team1, .team2, .team3 {
+  margin-right: 80px; }
+
+.team1 {
+  margin-left: 200px; }
+
+.team4 {
+  margin-right: 200px; }
 
 .circle {
   border-radius: 50%;
@@ -552,8 +564,13 @@ textarea {
   color: #171515; }
 
 body {
+  max-width: 100%;
   margin: 0 auto;
   font-family: 'Titillium Web', sans-serif; }
+
+.wrapper {
+  max-width: 1031px;
+  margin: 0 auto; }
 
 h1 {
   font-size: 42.16px;
