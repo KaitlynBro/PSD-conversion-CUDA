@@ -135,9 +135,7 @@ header {
   background-color: #87509c; }
 
 .headerContent {
-  padding-bottom: 145px;
-  -webkit-transform: translateX(20%);
-          transform: translateX(20%); }
+  padding-bottom: 145px; }
 
 .headerNav {
   display: -webkit-box;
@@ -159,8 +157,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
-  margin-left: 500px; }
+  padding: 0; }
   .headerNav2 li {
     margin-right: 45px;
     font-style: 16px;
@@ -180,10 +177,16 @@ header {
 .servicesContent {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
 
 .serviceInfo {
-  max-width: 33.3%;
+  width: 25%;
   margin-bottom: 128px; }
   .serviceInfo p, .serviceInfo h3 {
     color: #ffffff;
@@ -206,19 +209,6 @@ header {
   margin: auto;
   margin-bottom: 62px; }
 
-.service1 {
-  margin-left: 204px;
-  margin-right: 97px; }
-
-.service2 {
-  margin-right: 95px; }
-
-.service3 {
-  margin-right: 88px; }
-
-.service4 {
-  margin-right: 205px; }
-
 .team {
   background-color: #e7f1f8; }
   .team h2, .team .teamLorem {
@@ -228,31 +218,21 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
 
 .teamMember {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  max-width: 25%;
   margin-bottom: 128px; }
-
-.team1, .team2, .team3 {
-  margin-right: 80px; }
-
-.team1 {
-  margin-left: 200px; }
-
-.team4 {
-  margin-right: 200px; }
 
 .circle {
   border-radius: 50%;
   background-color: #878787;
-  width: 200px;
-  height: 200px; }
+  width: 100px;
+  height: 100px; }
 
 .teamInfo h3, h4, p {
   text-align: center; }
@@ -270,13 +250,7 @@ header {
 .icons {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.socialIcon {
-  margin-right: 12px; }
+  display: flex; }
 
 .socialIconLast {
   margin-right: 0; }
@@ -538,9 +512,6 @@ textarea {
     color: #ffffff;
     font-size: 24px;
     font-weight: 600; }
-
-.footerNav ul li:not(:last-of-type) {
-  margin-right: 58px; }
 
 .facebook:hover {
   color: #6b7ab1; }
