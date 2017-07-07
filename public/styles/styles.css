@@ -222,7 +222,8 @@ h1 {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 128px; }
+  padding-bottom: 128px;
+  width: 50%; }
 
 .service:not(:last-of-type) {
   margin-right: 97px; }
@@ -496,7 +497,7 @@ input[type=text] {
 textarea {
   border-radius: 4px;
   background-color: #273a71;
-  width: 860px;
+  max-width: 860px;
   height: 200px;
   border: none;
   margin-bottom: 59px; }
@@ -599,7 +600,8 @@ h2:after {
 
 .h2Text {
   font-size: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  padding: 0 15px; }
 
 h2, .h2Text {
   color: #ffffff;
@@ -614,3 +616,76 @@ h2, .h2Text {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 600; }
+
+@media (max-width: 1250px) {
+  .servicesDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .service {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 128px;
+    width: 50%;
+    margin-right: 0; }
+  .serviceImage {
+    width: 100%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%); }
+  .serviceText {
+    width: 100%; }
+  .teamDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .teamMember {
+    margin: 20px;
+    width: 100%; }
+  .teamPhoto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .skillsDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .skillContainer:not(:last-of-type) {
+    margin: 0; } }
+
+@media (max-width: 900px) {
+  .portfolio img {
+    width: 450px; }
+  .formNameEmail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .formMessage textarea {
+    width: 414px; }
+  .footerNav {
+    visibility: hidden; } }
